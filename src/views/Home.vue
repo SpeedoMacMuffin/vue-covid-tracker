@@ -1,8 +1,8 @@
 <template>
   <main v-if="!loading">
+    <country-select @get-country="getCountryData" :countries="countries" />
     <data-title :text="title" :dataDate="dataDate" />
     <data-boxes :stats="stats"/>
-    <country-select @get-country="getCountryData" :countries="countries" />
     <button @click="clearCountryData()" v-if="stats.Country"
     class="bg-green-700 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600">
       Clear Country
