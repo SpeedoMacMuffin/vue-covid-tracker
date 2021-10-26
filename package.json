@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
-    "autoprefixer": "^9",
+    "autoprefixer": "^9.8.8",
     "core-js": "^3.6.5",
     "moment": "^2.29.1",
     "postcss": "^7",
