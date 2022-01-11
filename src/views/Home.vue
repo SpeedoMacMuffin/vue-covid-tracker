@@ -2,11 +2,12 @@
   <main v-if="!loading">
     <country-select @get-country="getCountryData" :countries="countries" />
     <data-title :text="title" :dataDate="dataDate" />
-    <data-boxes :stats="stats"/>
-    <button @click="clearCountryData()" v-if="stats.Country"
-    class="bg-green-700 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600">
-      Clear Country
-    </button>
+    <data-boxes :stats="stats" />
+    <button
+      @click="clearCountryData()"
+      v-if="stats.Country"
+      class="bg-green-700 mb-10 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600"
+    >Clear Country</button>
   </main>
   <main v-else class="flex flex-col align-center justify-center text-center">
     <div class="text-gray-500 text-3xl mt-10 mb-6">Fetching Data</div>
